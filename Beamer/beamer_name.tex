@@ -1,0 +1,87 @@
+%This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+%%%
+% Minimal working example for the beamer theme "minimal"
+% Last Update: 15-02-2017
+% In case of questions/problems/proposals you can write, call or visit me
+% http://cs.uni-paderborn.de/cuk/personal/sascha-brauer/
+%%%
+\documentclass{beamer}
+
+%% Use the handout option to color-invert decorations
+\usetheme{minimal}
+
+\usepackage{color}
+\usepackage{lmodern}
+\usepackage{outlines}
+
+\usepackage{graphicx}
+\usepackage{media9}
+
+\title{Datenaufbereitung\\in modernen Unternehmen }
+
+\author{Kevin Haack}
+\institute{Paderborn University}
+
+\date{\today}
+
+\setbeamertemplate{section in toc}[ball unnumbered]
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}{Overview}
+\tableofcontents
+\end{frame}
+
+\section{Organisation}
+\input{Team}
+\input{channel}
+
+\section{The goal}
+\input{goal}
+
+\section{First semester}
+\headingframe{First semester (WS 17/18)}
+
+\input{goalFirst}
+
+\input{demoFirst}
+
+\input{responsibilitiesFirst}
+
+\input{repository}
+
+\input{BasicDB.tex}
+
+\section{Second semester}
+
+\headingframe{Second semester (SS 18)}
+\input{goalSecond}
+
+\input{demoSecond}
+
+\input{responsibilitiesSecond}
+
+\input{logging}
+
+\input{loggingDemo}
+
+\input{ExtendedDB.tex}
+
+\input{ensemblearning}
+
+
+\section{Additional work}
+\input{additionalWork}
+
+\section{Evaluation}
+\input{evaluation}
+
+\section{Further work}
+\input{furtherWork}
+
+\end{document}
